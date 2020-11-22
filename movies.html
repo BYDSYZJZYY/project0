@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+            <img width="68" src="img/logo.png" alt="Logo: film" class="logo" />
+        <div class="m-menu">
+            <input type="search" class="search-input" placeholder="Search by films" />
+            <nav class="navigation">
+                <a href="./index.html" class="navigation-link">Main</a>
+                <a href="./movies.html" class="navigation-link">Films</a>
+                <a href="#" class="navigation-link">News</a>
+                <a href="#" class="navigation-link">About Us</a>
+            </nav>
+            <div class="button-group">
+                <span class="user-name"></span>
+                <a href="./signnup.html"><button class="button sign-up">Sign Up</button></a>
+                <button class="button login  button-auth">Sign In</button>
+                <button class="button logout button-out">Sign Out</button>
+            </div>
+        </div>
+        <div class="mobile-buttons">
+            <button class="search-button">
+                <img src="img/search-icon.svg" alt="search" />
+            </button>
+            <button class="m-menu-button">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </header>
+    <div class="cinemas">
+        <section class="section__heading">
+            <h2 class="section__title">Cinemas</h2>
+        </section>
+        <div class="cards cards__cinemas">
+        </div>
+    </div>
+    <div class="movies hide">
+        <div class="cards cards__movies"></div>
+    </div>
+    <div class="modal-auth">
+        <div class="modal-dialog modal-dialog-auth">
+            <button class="close-auth">&times;</button>
+            <form id="logInForm">
+                <fieldset class="modal-body">
+                    <legend class="modal-title">Authorization</legend>
+                    <label class="label-auth">
+                        <span>Username</span>
+                        <input id="login" type="text">
+                    </label>
+                    <label class="label-auth">
+                        <span>Password</span>
+                        <input id="password" type="password">
+                    </label>
+                </fieldset>
+                <!-- /.modal-body -->
+                <div class="modal-footer">
+                    <div class="footer-buttons">
+                        <button class="button button-primary button-login" type="submit">Log In</button>
+                    </div>
+                </div>
+            </form>
+            <!-- /.modal-footer -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

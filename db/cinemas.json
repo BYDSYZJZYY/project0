@@ -1,0 +1,56 @@
+[
+    {
+        "name":"City Cinema",
+        "stars":"4.7",
+        "snacks":"Available",
+        "image":"../img/cinemas/cc-cinema.jpg",
+        "address": "Main Road, 48",
+        "movies":"city-cinema.json",
+        "phone":"845-6464"
+    },
+    {
+        "name":"Wilson`s Cinema",
+        "stars":"4.1",
+        "snacks":"Only drinks",
+        "image":"../img/cinemas/wc-cinema.jpg",
+        "address": "Wilson`s Street, 88",
+        "movies":"wilson-cinema.json",
+        "phone":"611-4911"
+    },
+    {
+        "name":"Cinema of Downtown",
+        "stars":"4.5",
+        "snacks":"Available",
+        "image":"../img/cinemas/cd-cinema.jpg",
+        "address": "President`s street, 9",
+        "movies":"downtown-cinema.json",
+        "phone":"165-8941"
+    },
+    {
+        "name":"Watch Together",
+        "stars":"4.9",
+        "snacks":"Available",
+        "image":"../img/cinemas/wt.jpg",
+        "address": "The Apple Street, 12",
+        "movies":"watch-cinema.json",
+        "phone":"798-0328"
+    },
+    {
+        "name":"MovieLovers",
+        "stars":"4.0",
+        "snacks":"Not Available",
+        "image":"../img/cinemas/ml-cinema.jpg",
+        "address": "Yellow Street, 72",
+        "movies":"movielovers-cinema.json",
+        "phone":"646-1218"
+    },
+    {
+        "name":"Final Film",
+        "stars":"3.9",
+        "snacks":"Available",
+        "image":"../img/cinemas/ff-cinema.jpg",
+        "address": "Youths Street, 45",
+        "movies":"finalfilm-cinema.json",
+        "phone":"154-4446"
+    }
+]

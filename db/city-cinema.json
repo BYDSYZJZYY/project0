@@ -1,0 +1,55 @@
+[
+    {
+        "id":"cc01",
+        "link":"../ghostbusters.html",
+        "name":"Ghostbusters: Afterlife",
+        "price":"2$",
+        "seats":"Full",
+        "genre":"Comedy, Drama",
+        "image":"../img/poster.jpg"
+    },
+    {
+        "id":"cc02",
+        "link":"../notimetodie.html",
+        "name":"James Bond: No Time To Die",
+        "price":"2.4$",
+        "seats":"Half",
+        "genre":"Action, Adventure",
+        "image":"../img/jb-poster.jpg"
+    },
+    {
+        "id":"cc03",
+        "name":"Death on The Nile",
+        "price":"1.9$",
+        "seats":"Empty",
+        "genre":"Crime, Drama",
+        "image":"../img/dn-poster.jpg"
+    },
+    {
+        "id":"cc04",
+        "name":"Free Guy",
+        "price":"1.5$",
+        "seats":"Half",
+        "genre":"Comedy",
+        "image":"../img/fg-poster.jpeg"
+    },
+    {
+        "id":"cc05",
+        "name":"The Croods: A New Age",
+        "price":"1.0$",
+        "seats":"Full",
+        "genre":"Cartoon, Comedy",
+        "image":"../img/tc.jpg"
+    },
+    {
+        "id":"cc06",
+        "name":"A Quiet Place II",
+        "price":"2.3$",
+        "seats":"Half",
+        "genre":"Horror",
+        "image":"../img/qp-poster.jpg"
+    }
+
+
+
+]
