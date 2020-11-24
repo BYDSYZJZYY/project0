@@ -754,6 +754,42 @@ label {
   margin: 2px;
   color:red;
 }
+footer{
+  margin-top: 34px;
+}
+.footer{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__logo{
+  width: 30px;
+  height: 30px;  
+}
+
+.footer__info{
+ list-style-type: none;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ color: #8c8c8c;
+}
+
+.footer__info li{
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.copyright{
+  background-color: #f3f3f3;
+  width: 100%;
+  color: #a5a5a5;
+  text-align: center;
+  padding: 5px;
+}
 
 
 @media (max-width: 1200px) {
