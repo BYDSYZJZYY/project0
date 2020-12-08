@@ -140,38 +140,6 @@ function checkAuth() {
 }
 
 
-function createCardCinemas(cinema) {
-  const {
-    name,
-    stars,
-    snacks,
-    image,
-    address,
-    movies,
-    phone,
-  } = cinema;
-  const card = `
-    <a class="cinema__card card__cinema" data-products='${movies}'>
-		<img src="${image}" alt="#{name}" class="card-cinema-image"/>
-		<div class="card-text">
-			<div class="card-heading">
-				<h3 class="card-title">${name}</h3>
-				<span class="card-tag tag">Snacks: ${snacks} </span>
-			</div>
-			<div class="card-info">
-				<div class="film__rating">
-					${stars}
-				</div>
-				<div class="address">Adress: ${address}</div>
-				<div class="phone">Phone number:${phone}</div>
-			</div>
-		</div>
-	</a>
-    `;
-
-  cardsCinemas.insertAdjacentHTML('beforeend', card);
-}
-
 function createCardMovies({
   id,
   link,
@@ -182,7 +150,7 @@ function createCardMovies({
   image
 }) {
   const card = document.createElement('div');
-  card.className = 'cinema__card';
+  card.className = 'movie__card';
 
   card.insertAdjacentHTML('beforeend', `
      <a href="${link}">
@@ -204,32 +172,14 @@ function createCardMovies({
   cardsMovies.insertAdjacentElement('beforeend', card);
 }
 
-function openMovies(event) {
-  const target = event.target;
-
-  const cinema = target.closest('.card__cinema');
-  if (cinema) {
-    cardsMovies.textContent = '';
-    kinoparks.classList.add('hide');
-    movies.classList.remove('hide');
-    getData(`./db/${cinema.dataset.products}`).then(function (data) {
-      data.forEach(createCardMovies);
-    })
-  }
-}
 
 function init() {
 
-  getData('../db/cinemas.json').then(function (data) {
-    data.forEach(createCardCinemas);
+  getData('../db/movies.json').then(function (data) {
+    data.forEach(createCardMovies);
   });
 
-  cardsCinemas.addEventListener('click', openMovies);
 
-  logo.addEventListener('click', function () {
-    kinoparks.classList.remove('hide');
-    movies.classList.add('hide');
-  })
   checkAuth();
 }
 

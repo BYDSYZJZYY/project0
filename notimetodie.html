@@ -23,13 +23,13 @@
       <nav class="navigation">
         <a href="./index.html" class="navigation-link">Main</a>
         <a href="./movies.html" class="navigation-link">Films</a>
-        <a href="#" class="navigation-link">News</a>
-        <a href="#" class="navigation-link">About Us</a>
+        <a href="./profile.html" class="navigation-link">Profile</a>
+        <a href="./about-us.html" class="navigation-link">About Us</a>
       </nav>
       <div class="button-group">
         <span class="user-name"></span>
-        <a href="./signnup.html"><button class="button sign-up">Sign Up</button></a>
-        <button class="button login button-auth">Sign In</button>
+        <a href="./signnup.html"><button class="button sign-up">Sign Up</button></a> 
+        <button class="button login  button-auth">Sign In</button>
         <button class="button logout button-out">Sign Out</button>
       </div>
     </div>
@@ -322,32 +322,37 @@
     </div>
     <!-- /.container -->
   </section>
+  
   <div class="modal-auth">
     <div class="modal-dialog modal-dialog-auth">
-      <button class="close-auth">&times;</button>
-      <form id="logInForm">
-        <fieldset class="modal-body">
-          <legend class="modal-title">Authorization</legend>
-          <label class="label-auth">
-            <span>Username</span>
-            <input id="login" type="text">
-          </label>
-          <label class="label-auth">
-            <span>Password</span>
-            <input id="password" type="password">
-          </label>
-        </fieldset>
-        <!-- /.modal-body -->
-        <div class="modal-footer">
-          <div class="footer-buttons">
-            <button class="button button-primary button-login" type="submit">Log In</button>
-          </div>
-        </div>
-      </form>
-      <!-- /.modal-footer -->
+        <button class="close-auth">&times;</button>
+        <form id="logInForm">
+            <fieldset class="modal-body">
+                <legend class="modal-title">Authorization</legend>
+                <label class="label-auth">
+                    <span>Username</span>
+                    <input id="login" type="text">
+                </label>
+                <label class="label-auth">
+                    <span>Password</span>
+                    <input id="password" type="password">
+                </label>
+
+                <input type="checkbox" name="remember" id="remember"><label for="remember" class="remember-text">Remember Me</label> 
+                
+            </fieldset>
+            <!-- /.modal-body -->
+            <div class="modal-footer">
+                <div class="footer-buttons">
+                    <button class="button button-primary button-login" type="submit">Log In</button>
+                </div>
+                <p class="footer__sign-up">Don't have an account? <a href="./signnup.html">Sign Up</a></p>
+            </div>
+        </form>
+        <!-- /.modal-footer -->
     </div>
     <!-- /.modal-dialog -->
-  </div>
+</div>
   <div class="modal__place-selector">
     <div class="modal-dialog modal-dialog-auth">
       <h3>Where do you want to seat:</h3>

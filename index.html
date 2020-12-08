@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Film-Book Ticket Online</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:weight@300;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">  <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -23,8 +23,8 @@
       <nav class="navigation">
         <a href="./index.html" class="navigation-link">Main</a>
         <a href="./movies.html" class="navigation-link">Films</a>
-        <a href="#" class="navigation-link">News</a>
-        <a href="#" class="navigation-link">About Us</a>
+        <a href="./profile.html" class="navigation-link">Profile</a>
+        <a href="./about-us.html" class="navigation-link">About Us</a>
       </nav>
       <div class="button-group">
         <span class="user-name"></span>
@@ -50,35 +50,35 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="ghostbusters.html">
-            <img src="./img/poster.jpg" alt="">
+            <img src="./img/slider/ghostbusters_afterlife.jpg" alt="">
           </a>
         </div>
         <div class="swiper-slide">
           <a href="notimetodie.html">
-            <img src="./img/jb-poster.jpg" alt="">
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="ghostbuters.html">
-            <img src="./img/dn-poster.jpg" alt="">
+            <img src="./img/slider/no-time-to-die.jpg" alt="">
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="./img/fg-poster.jpeg" alt="">
+            <img src="./img/slider/6fa90aff-e079-4dff-8f74-ca5731f92d22.png" alt="">
           </a>
         </div>
         <div class="swiper-slide">
           <a href="#">
-            <img src="./img/tc.jpg" alt="">
+            <img src="./img/slider/FreeGuy_Banner-scaled.jpg" alt="">
           </a>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src=".\img\slider\1049292-sing-2-and-croods-2-release-dates-shifted.jpg" alt="">
+          </a>
+        </div>
+        
+      </div><!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
   <!-- films swiper -->
@@ -142,48 +142,53 @@
     </div>
     <!-- /.container -->
   </section>
+  
   <div class="modal-auth">
     <div class="modal-dialog modal-dialog-auth">
-      <button class="close-auth">&times;</button>
-      <form id="logInForm">
-        <fieldset class="modal-body">
-          <legend class="modal-title">Authorization</legend>
-          <label class="label-auth">
-            <span>Username</span>
-            <input id="login" type="text">
-          </label>
-          <label class="label-auth">
-            <span>Password</span>
-            <input id="password" type="password">
-          </label>
-        </fieldset>
-        <!-- /.modal-body -->
-        <div class="modal-footer">
-          <div class="footer-buttons">
-            <button class="button button-primary button-login" type="submit">Log In</button>
-          </div>
-        </div>
-      </form>
-      <!-- /.modal-footer -->
+        <button class="close-auth">&times;</button>
+        <form id="logInForm">
+            <fieldset class="modal-body">
+                <legend class="modal-title">Authorization</legend>
+                <label class="label-auth">
+                    <span>Username</span>
+                    <input id="login" type="text">
+                </label>
+                <label class="label-auth">
+                    <span>Password</span>
+                    <input id="password" type="password">
+                </label>
+
+                <input type="checkbox" name="remember" id="remember"><label for="remember" class="remember-text">Remember Me</label> 
+                
+            </fieldset>
+            <!-- /.modal-body -->
+            <div class="modal-footer">
+                <div class="footer-buttons">
+                    <button class="button button-primary button-login" type="submit">Log In</button>
+                </div>
+                <p class="footer__sign-up">Don't have an account? <a href="./signnup.html">Sign Up</a></p>
+            </div>
+        </form>
+        <!-- /.modal-footer -->
     </div>
     <!-- /.modal-dialog -->
-  </div>
+</div>
   <footer>
     <div class="footer">
       <a href="./index.html" class="footer-logo">
         <img width="68" src="img/logo.png" alt="Logo: film" class="logo" />
       </a>
       <ul class="footer__info">
-        <li>About Us</li>
-        <li>Our partners</li>
-        <li>Contact Us</li>
-        <li>Work with us</li>
+        <li><a href="#">Our partners </a></li>
+        <li><a href="#">About Us </a></li>
+        <li><a href="#">Contact Us </a></li>
+        <li><a href="#">Work with us </a></li>
       </ul>
       <div class="footer__logos">
-        <img src="./img/facebook.svg" alt="Facebook logo" class="footer__logo">
-        <img src="./img/instagram.svg" alt="instagram logo" class="footer__logo">
-        <img src="./img/google-plus.svg" alt="google-plus logo" class="footer__logo">
-        <img src="./img/twitter.svg" alt="twitter logo" class="footer__logo">
+        <a href="#"><img src="./img/facebook.svg" alt="Facebook logo" class="footer__logo"></a>
+        <a href="#"><img src="./img/instagram.svg" alt="instagram logo" class="footer__logo"></a>
+        <a href="#"><img src="./img/google-plus.svg" alt="google-plus logo" class="footer__logo"></a>
+        <a href="#"><img src="./img/twitter.svg" alt="twitter logo" class="footer__logo"></a>
       </div>
     </div>
     <div class="copyright">

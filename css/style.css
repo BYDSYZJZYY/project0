@@ -10,6 +10,13 @@ body {
   color: #363636;
 }
 
+button{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #363636;
+  line-height: 16px;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -75,6 +82,8 @@ body {
   line-height: 21px;
   color: #363636;
   margin-right: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
 }
 
 .navigation-link:after {
@@ -141,7 +150,7 @@ body {
   height: 37px;
   color: #fff;
   margin-right: 2px;
-  width: 360px;
+  width: 377px;
   border-radius: 5px;
 
 }
@@ -212,9 +221,11 @@ body {
 }
 
 .swiper-slide img {
-  width: 399px;
-  height: 565px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 
 .trailer-button {
   display: flex;
@@ -232,20 +243,21 @@ body {
 .trailer-button-icon {
   margin-right: 14px;
 }
+.book{
+  border-color: #5671f6;
+}
 
 .reserve__place {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #5671f6;
   color: #fff;
   border: 1px solid #d4d4d4;
-  border-radius: 5px;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 5px;
+  margin-top: 10px;
+  width: 122px;
 }
 .placeselector__submit{
   position: relative;
@@ -348,7 +360,24 @@ body {
 .rating-text-bold {
   font-weight: bold;
 }
-
+.booking__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.book__submit{
+  background-color: #5671f6;
+  color: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+  width: 122px;
+}
 .cast {
   padding-top: 70px;
   padding-bottom: 100px;
@@ -495,12 +524,25 @@ body {
   -webkit-align-items: center;
   align-items: center;
 }
+.swiper-pagination{
+  position: relative;
+  margin-top: 15px;
+}
 
 label {
   margin-bottom: 25px;
   display: inline;
 }
-
+.modal__cinema-select{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 999;
+}
 .modal__place-selector {
   position: fixed;
   left: 0;
@@ -511,7 +553,24 @@ label {
   display: none;
   z-index: 999;
 }
+.modal__ticket-information{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 999;
+}
 
+.ticket-information-button{
+  background-color: #5671f6;
+  color:white;
+  border: 2px solid #5671f6;
+  border-radius: 7px;
+  height: 40px;
+}
 
 .select__place label {
   margin-right: 20px;
@@ -564,17 +623,17 @@ label {
 .cards {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.cinema__card {
+.movie__card {
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 30px;
-  flex-basis: 31%;
+  flex-basis: 27%;
   text-decoration: none;
   margin: 10px;
 }
@@ -583,19 +642,10 @@ label {
   color: #8c8c8c
 }
 
-.card__cinema {
-  cursor: pointer
-}
-
-.card-cinema-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
 
 .card-movie-image {
   width: 100%;
-  height: 550px;
+  height: 450px;
   object-fit: cover;
 }
 
@@ -604,10 +654,6 @@ label {
   min-height: 100px;
   display: flex;
   flex-direction: column;
-}
-
-.cinemas {
-  min-height: auto;
 }
 
 
@@ -648,9 +694,6 @@ label {
   display: none;
 }
 
-.cinemas {
-  margin: 20px;
-}
 
 .card-price-bold {
   font-weight: bold;
@@ -659,7 +702,7 @@ label {
   margin-right: 30px;
 }
 
-.cinema__card a {
+.movie__card a {
   text-decoration: none;
   color: black;
 }
@@ -778,9 +821,14 @@ footer{
  color: #8c8c8c;
 }
 
-.footer__info li{
+.footer__info a{
   margin-right: 10px;
   font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  color: #363636;
+
 }
 
 .copyright{
@@ -791,6 +839,35 @@ footer{
   padding: 5px;
 }
 
+/* Profile */
+
+main .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* About us */
+
+.accordion{
+  background-color: #5671f6;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-panel{
+  padding: 0 18px;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 
 @media (max-width: 1200px) {
   .container {
@@ -959,6 +1036,7 @@ footer{
     margin-bottom: 30px;
   }
 
+
   .cast {
     padding-top: 50px;
     padding-bottom: 70px;
@@ -1077,8 +1155,46 @@ footer{
 .is-open {
   display: flex;
 }
+.modal__cinema-select .modal-dialog{
+  height: 500px;
+}
+.cinema-select label{
+  height: 50px;
+  padding: 15px 30px;
+}
+.blue-border:not(label){
+  height: 50px;
+  background-color: #5671f6;
+  color: white;
+}
+.blue-border{
+  border: 2px solid #5671f6;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.cinema-select__title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cinema-select button{
+  border: 2px solid #5671f6;
+  color: #fff;
+  background: #5671f6;
+  border-radius: 7px;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 285px;
+}
 
 
+.cinema-select p{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 0 15px;
+}
 .modal-dialog {
   max-width: 780px;
   width: 95%;
@@ -1136,7 +1252,6 @@ footer{
 }
 
 .modal-footer {
-  display: flex;
   align-items: center;
   justify-content: flex-end;
 }
@@ -1144,4 +1259,18 @@ footer{
 .footer-buttons {
   display: flex;
   align-items: center;
+}
+
+#remember{
+  margin-left: 30px;
+  height: 10px;
+  width: 10px;
+}
+.remember-text{
+  font-size: 12px;
+}
+
+.footer__sign-up{
+font-size: 11px;
+text-align: center;
 }
